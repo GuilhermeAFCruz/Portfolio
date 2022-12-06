@@ -38,6 +38,21 @@ html{
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar{
+    width: .7em;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--clr-dark);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--clr-accent);
+    border: 3px solid var(--clr-dark);
+    border-radius: 10px;
+}
+
+
 body{
 background: var(--clr-dark) ;
 color: var(--clr-white);
@@ -61,10 +76,15 @@ strong{
     font-weight: var(--fw-bold);
 }
 
-:focus {
+:focus{
+    outline: none;
+}
+:focus-visible {
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
+
+
 
 /* Buttons */
 
@@ -138,6 +158,7 @@ header{
 
 .logo{
     max-width: 100px;
+    
 }
 
 .nav{
@@ -177,63 +198,54 @@ header{
 }
 
 .nav-toggle{
-    padding:  .7em;
+    width: 50px;
+    height: 50px;
+    padding: 0;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: .6em;
     z-index: 1000;
 }
+.nav-toggle{
+    --button-color:var(--clr-accent);
+}
+
+.nav-toggle .hamburger__line{
+    transition: 
+        y 200ms ease-in 300ms,
+        rotate 200ms ease-in,
+        opacity 0ms 300ms;
+        transform-origin: center;
+    
+
+}
+.nav-toggle[aria-expanded='true']  .hamburger__line{
+    transition: 
+        y 200ms ease-in,
+        rotate 200ms ease-in 300ms,
+        opacity 0ms 300ms;
+
+}
+
+
+.nav-toggle[aria-expanded='true'] :is(.top,.bottom){
+    y: 45px;
+}
+
+.nav-toggle[aria-expanded='true']  .top{rotate: 45deg;}
+.nav-toggle[aria-expanded='true']  .bottom{rotate: -45deg;}
+.nav-toggle[aria-expanded='true']  .middle{opacity: 0;}
 
 .nav-open .nav{
     transform: translateX(0);
 }
 
-.nav-open .navtoggle{
+.nav-open .nav-toggle{
     position: fixed;
 }
-
-.nav-open .hamburger {
-    transform: rotate(.625turn);
-}
-
-.nav-open .hamburger::before{
-    transform: rotate(90deg) translateX(-6px);
-}
-
-.nav-open .hamburger::after{
-    opacity: 0;
-}
-
-.hamburger{
-    display: block;
-    position: relative;
-}
-.hamburger,
-.hamburger::before,
-.hamburger::after{
-    background: var(--clr-accent);
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-}
-
-
-.hamburger::before,
-.hamburger::after{
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    
-}
-.hamburger::before{ top: 6px;}
-.hamburger::after{ bottom: 6px;}
-
-
 /* Intro */
 
 .intro{

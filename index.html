@@ -20,8 +20,24 @@
         <div class="logo">
             <img src="img/devjane.png" alt="">
         </div>
-        <button class="nav-toggle" aria-label="toggle navigation">
-            <span class="hamburger"></span>
+        <button data-nav-button class="nav-toggle" aria-controls="nav" aria-expanded="false">
+            <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="50px">
+
+                <rect class="hamburger__line top " 
+                    width="80" height="10"
+                    x="10" y="25" rx="5">
+                </rect>
+
+                <rect class="hamburger__line middle" 
+                    width="80" height="10"
+                    x="10" y="45" rx="5">
+                </rect>
+
+                <rect class="hamburger__line bottom" 
+                    width="80" height="10"
+                    x="10" y="65" rx="5">
+                </rect>
+            </svg>
         </button>
         <nav class="nav">
             <ul class="nav__list">
@@ -36,29 +52,29 @@
     <!-- Introduction -->
     <section class="intro" id="home">
         <h1 class="section__title section__title--intro">
-            Hi, I am <strong>Jane Smith</strong>
+            Olá, Meu nome é <strong>Guilherme Augusto</strong>
         </h1>
         <p class="section__subtitle section__subtitle--intro">front-end dev</p>
-        <img src="img/dev-jane-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+        <img src="img/perfil.jpg" alt="uma foto de Guilherme" class="intro__img">
     </section>
     
     
     <!-- My services -->
     <section class="my-services" id="services">
-        <h2 class="section__title section__title--services">What I do</h2>
+        <h2 class="section__title section__title--services">Meu trabalho</h2>
         <div class="services">
             <div class="service">
-                <h3>Design + Development</h3>
+                <h3>HTML</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div> <!-- / service -->
             
             <div class="service">
-                <h3>E-Commerce</h3>
+                <h3>CSS</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div> <!-- / service -->
             
             <div class="service">
-                <h3>WordPress</h3>
+                <h3>JavaScript</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div> <!-- / service -->
         </div> <!-- / services -->
@@ -69,7 +85,7 @@
     
     <!-- About me -->
     <section class="about-me" id="about">
-       <h2 class="section__title section__title--about">Who I am</h2>
+       <h2 class="section__title section__title--about">Sobre mim</h2>
        <p class="section__subtitle section__subtitle--about">Lorem ipsum dolor sit amet.</p>
        
        <div class="about-me__body">
@@ -82,7 +98,7 @@
     
     <!-- My Work -->
     <section class="my-work" id="work">
-        <h2 class="section__title section__title--work">My work</h2>
+        <h2 class="section__title section__title--work">Meus projetos</h2>
         <p class="section__subtitle section__subtitle--work"></p>
         
         <div class="portfolio">
