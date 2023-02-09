@@ -157,12 +157,20 @@ header{
     display: flex;
     justify-content: space-between;
     padding: 1em;
+    height: 4em;
 }
 
-.logo{
-    max-width: 100px;
-    
+.back{
+    max-width: 50px;
+    position: absolute;
+    top: .5rem;
+    left: 20px;
 }
+
+.back__button{
+    color: var(--clr-accent);    
+}
+
 
 .nav{
     position: fixed;
@@ -509,3 +517,5 @@ header{
     margin: 0;
     padding: 0;
 }
+
+
