@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/e497cda592.js" crossorigin="anonymous"></script>
     
     <script src="js/index.js" defer></script>
-    <title>Portfólio | Guilherme Augusto</title>
+    <title>Portfólio | Space Travel</title>
     
 
     </head>
@@ -21,8 +21,24 @@
             <div class="logo">
                 <img src="img/devjane.png" alt="">
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
+            <button data-nav-button class="nav-toggle" aria-controls="nav" aria-expanded="false">
+                <svg fill="var(--button-color)" class="hamburger" viewBox="0 0 100 100" width="50px">
+    
+                    <rect class="hamburger__line top " 
+                        width="80" height="10"
+                        x="10" y="25" rx="5">
+                    </rect>
+    
+                    <rect class="hamburger__line middle" 
+                        width="80" height="10"
+                        x="10" y="45" rx="5">
+                    </rect>
+    
+                    <rect class="hamburger__line bottom" 
+                        width="80" height="10"
+                        x="10" y="65" rx="5">
+                    </rect>
+                </svg>
             </button>
             <nav class="nav">
                 <ul class="nav__list">
@@ -37,17 +53,23 @@
 
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                Space Travel <strong>Website</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Quer viajar pelo espaço? </p>
+            <img src="img/Space-Travel-1.jpg" alt="" class="intro__img">
         </section>
         
         <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+            <p>Uma página detalhando alguns pontos necessários para uma viagem espacial</p>
+            <img src="img/Space-Travel-2.jpg" alt="">
+            <p>A ideia do projeto é desenvolver um Website responsivo completamente do zero, tendo como referencia um arquivo do Figma detalhado e um Design System.</p>
+            <p>O projeto foi desenvolvido durante um curso gratuito do site Scrimba, ministrado pelo professor Kevin Powell</p>
+
+            <ul class="link__list">
+                <li class="link__item"><a href="https://scrimba.com/learn/spacetravel" class="portfolio__link">Curso</a></li>
+                <li class="link__item"><a href="https://guilhermeafcruz.github.io/Space-Travel-Site/" class="portfolio__link">Projeto</a></li>
+                <li class="link__item"><a href="https://github.com/GuilhermeAFCruz/Space-Travel-Site" class="portfolio__link">Código</a></li>
+            </ul>
         </div>
 
         <footer class="footer">
